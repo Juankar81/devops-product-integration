@@ -1,0 +1,40 @@
+{
+    "manifestVersion": 1,
+    "id": "ID-task",
+    "name": "NAME",
+    "description": "DESCRIPTION",
+    "publisher": "PRIMAVERABSS",
+    "version": "1.0.0",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "icons": {
+        "default": "images/logo.png"
+    }, 
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "branding": {
+        "color": "rgb(34, 34, 34)",
+        "theme": "dark"
+    },
+    "contributions": [
+        {
+            "id": "ID-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "task"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "task"
+        }
+    ]
+}

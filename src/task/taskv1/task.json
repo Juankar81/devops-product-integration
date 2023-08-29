@@ -1,0 +1,44 @@
+{
+    "id": "GUID",
+    "name": "NAME",
+    "friendlyName": "FRIENDLYNAME",
+    "description": "DESCRIPTION",
+    "author": "Primavera DevOps Team",
+    "instanceNameFormat": "",
+    "releaseNotes": "",
+    "helpMarkDown": "https://devops.primaverabss.com",
+    "category": "Utility",
+    "version": {
+        "Major": 1,
+        "Minor": 0,
+        "Patch": 0
+    },
+    "visibility": [
+        "Build",
+        "Release"
+    ],
+    "runsOn": [
+        "Agent"
+    ],
+    "minimumAgentVersion": "2.115.0",
+    "showEnvironmentVariables": true,
+    "groups": [],
+    "inputs": [
+        {
+            "name": "FieldExample",
+            "type": "string",
+            "label": "Field Example",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "Specify the Field Example."
+        }
+    ],
+    "execution": {
+        "PowerShell3": {
+            "target": "task.ps1",
+            "platforms": [
+                "windows"
+            ]
+        }
+    }
+}
